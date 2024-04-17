@@ -12,7 +12,7 @@ App build to serve an api to process and result HD Space,RAM,Running services in
 2. Install dependencies: `npm install`
 3. create .env file from .env.example
 4. Set environment variables:
-   - `MONGO_ATLAS_URI`: Connection string for MongoDB (e.g. `mongodb://srv....`)
+   - `MONGO_ATLAS_URI`: Connection string for MongoDB (e.g. `mongodb://srv..../dbname`)
    - `PORT`: port for the application
    - `MONGO_COLLECTION_SYSTEM_INFO`: Mongo db collection name for storing the system info (e.g. `store_system_info`)
 5. Start the server: `npm start`  | to run development environment : `npm run dev`
