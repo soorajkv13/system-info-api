@@ -1,5 +1,6 @@
 // models/system_info.js
 const mongoose = require("mongoose");
+const date = Date.now;
 const { randomUUID } = require("crypto");
 const collection = process.env.MONGO_COLLECTION_SYSTEM_INFO
 const systemInfoSchema = new mongoose.Schema(
@@ -9,6 +10,7 @@ const systemInfoSchema = new mongoose.Schema(
     SystemInfo: { type: Object, required: false },
     RAM: { type: Object, required: false },
     RunningServices: { type: Object, required: false },
+    CreatedAt: { type: Date, default: date },
   },
   {versionKey: false,}
 );
